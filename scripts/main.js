@@ -1,4 +1,4 @@
-const socket = new WebSocket('ws://kondolovskiy.herokuapp.com');
+const socket = new WebSocket('wss://kondolovskiy.herokuapp.com');
 
 socket.onopen = function() {
 	console.log("Connected");
