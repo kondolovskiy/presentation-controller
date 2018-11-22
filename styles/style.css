@@ -1,0 +1,13 @@
+.btn {
+    display: inline-block;
+    width: 15rem;
+    height: 12rem;
+    margin: 20px;
+    border: 2px solid #000;
+    background: #cacaca;
+    font-size: 2rem;
+}
+
+.controls {
+    text-align: center;
+}
