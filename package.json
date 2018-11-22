@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/kondolovskiy/presentation-controller#readme",
   "dependencies": {
+    "nosleep.js": "^0.7.0",
     "webpack": "^4.26.0"
   },
   "devDependencies": {

@@ -1,4 +1,5 @@
 import Socket from './socket';
+import * as NoSleep from 'nosleep.js/src';
 
 const socket = new Socket();
 
