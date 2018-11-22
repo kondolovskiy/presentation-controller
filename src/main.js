@@ -3,26 +3,26 @@ import Socket from './socket';
 const socket = new Socket();
 
 document.addEventListener('DOMContentLoaded', () => {
-	const next = document.querySelector('.next');
-	const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+    const prev = document.querySelector('.prev');
 
-	prev.addEventListener('click', e => {
-		socket.send('prev');
-	});
+    prev.addEventListener('click', e => {
+        socket.send('prev');
+    });
 
-	next.addEventListener('click', e => {
-		socket.send('next');
-	});
+    next.addEventListener('click', e => {
+        socket.send('next');
+    });
 
-	const noSleepBtn = document.getElementById('noSleep');
-	const noSleep = new NoSleep();
+    const noSleepBtn = document.getElementById('noSleep');
+    const noSleep = new NoSleep();
 
-	function enableNoSleep() {
-		noSleep.enable();
-		noSleepBtn.removeEventListener('click', enableNoSleep, false);
-	}
+    function enableNoSleep() {
+        noSleep.enable();
+        noSleepBtn.removeEventListener('click', enableNoSleep, false);
+    }
 
-	noSleepBtn.addEventListener('click', enableNoSleep, false);
+    noSleepBtn.addEventListener('click', enableNoSleep, false);
 
-	noSleep.disable();
+    noSleep.disable();
 });
